@@ -11,7 +11,7 @@ import CoreData
 
 @objc(Set)
 class Set: NSManagedObject {
-
+    //change
     @NSManaged var title: String
     @NSManaged var views: NSNumber
     @NSManaged var selfCreated: NSNumber
