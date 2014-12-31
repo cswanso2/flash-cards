@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB1301A41A522583008F4F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301A31A522583008F4F64 /* AppDelegate.swift */; };
 		CB1301A71A522583008F4F64 /* flash_cards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB1301A51A522583008F4F64 /* flash_cards.xcdatamodeld */; };
 		CB1301A91A522583008F4F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301A81A522583008F4F64 /* ViewController.swift */; };
 		CB1301AC1A522583008F4F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1301AA1A522583008F4F64 /* Main.storyboard */; };
-		CB1301AE1A522583008F4F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1301AD1A522583008F4F64 /* Images.xcassets */; };
 		CB1301B11A522583008F4F64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1301AF1A522583008F4F64 /* LaunchScreen.xib */; };
 		CB1301BD1A522584008F4F64 /* flash_cardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301BC1A522584008F4F64 /* flash_cardsTests.swift */; };
+		CB1301C91A523EEC008F4F64 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301C81A523EEC008F4F64 /* Set.swift */; };
+		CB1301CB1A523EED008F4F64 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301CA1A523EED008F4F64 /* Card.swift */; };
+		CB1301DD1A52980D008F4F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301CF1A52980D008F4F64 /* AppDelegate.swift */; };
+		CB1301DE1A52980D008F4F64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB1301D01A52980D008F4F64 /* LaunchScreen.xib */; };
+		CB1301DF1A52980D008F4F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB1301D21A52980D008F4F64 /* Main.storyboard */; };
+		CB1301E11A52980D008F4F64 /* CreateSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301D51A52980D008F4F64 /* CreateSetViewController.swift */; };
+		CB1301E21A52980D008F4F64 /* flash_cards.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB1301D61A52980D008F4F64 /* flash_cards.xcdatamodeld */; };
+		CB1301E31A52980D008F4F64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB1301D81A52980D008F4F64 /* Images.xcassets */; };
+		CB1301E41A52980D008F4F64 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB1301D91A52980D008F4F64 /* Info.plist */; };
+		CB1301E61A52980D008F4F64 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301DB1A52980D008F4F64 /* TableViewController.swift */; };
+		CB1301EB1A539147008F4F64 /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301EA1A539147008F4F64 /* SetsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +47,21 @@
 		CB1301B61A522584008F4F64 /* flash-cardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flash-cardsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1301BB1A522584008F4F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB1301BC1A522584008F4F64 /* flash_cardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flash_cardsTests.swift; sourceTree = "<group>"; };
+		CB1301C61A522A8D008F4F64 /* CreateSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSetViewController.swift; sourceTree = "<group>"; };
+		CB1301C81A523EEC008F4F64 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		CB1301CA1A523EED008F4F64 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CB1301CF1A52980D008F4F64 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB1301D11A52980D008F4F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CB1301D31A52980D008F4F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB1301D41A52980D008F4F64 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		CB1301D51A52980D008F4F64 /* CreateSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSetViewController.swift; sourceTree = "<group>"; };
+		CB1301D71A52980D008F4F64 /* flash_cards.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = flash_cards.xcdatamodel; sourceTree = "<group>"; };
+		CB1301D81A52980D008F4F64 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CB1301D91A52980D008F4F64 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB1301DA1A52980D008F4F64 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		CB1301DB1A52980D008F4F64 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CB1301DC1A52980D008F4F64 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB1301EA1A539147008F4F64 /* SetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +105,15 @@
 			children = (
 				CB1301A31A522583008F4F64 /* AppDelegate.swift */,
 				CB1301A81A522583008F4F64 /* ViewController.swift */,
+				CB1301C61A522A8D008F4F64 /* CreateSetViewController.swift */,
 				CB1301AA1A522583008F4F64 /* Main.storyboard */,
+				CB1301EA1A539147008F4F64 /* SetsViewController.swift */,
 				CB1301AD1A522583008F4F64 /* Images.xcassets */,
+				CB1301CE1A52980D008F4F64 /* flash-cards */,
 				CB1301AF1A522583008F4F64 /* LaunchScreen.xib */,
 				CB1301A51A522583008F4F64 /* flash_cards.xcdatamodeld */,
+				CB1301CA1A523EED008F4F64 /* Card.swift */,
+				CB1301C81A523EEC008F4F64 /* Set.swift */,
 				CB1301A11A522583008F4F64 /* Supporting Files */,
 			);
 			path = "flash-cards";
@@ -113,6 +142,24 @@
 				CB1301BB1A522584008F4F64 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB1301CE1A52980D008F4F64 /* flash-cards */ = {
+			isa = PBXGroup;
+			children = (
+				CB1301CF1A52980D008F4F64 /* AppDelegate.swift */,
+				CB1301D01A52980D008F4F64 /* LaunchScreen.xib */,
+				CB1301D21A52980D008F4F64 /* Main.storyboard */,
+				CB1301D41A52980D008F4F64 /* Card.swift */,
+				CB1301D51A52980D008F4F64 /* CreateSetViewController.swift */,
+				CB1301D61A52980D008F4F64 /* flash_cards.xcdatamodeld */,
+				CB1301D81A52980D008F4F64 /* Images.xcassets */,
+				CB1301D91A52980D008F4F64 /* Info.plist */,
+				CB1301DA1A52980D008F4F64 /* Set.swift */,
+				CB1301DB1A52980D008F4F64 /* TableViewController.swift */,
+				CB1301DC1A52980D008F4F64 /* ViewController.swift */,
+			);
+			name = "flash-cards";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +211,7 @@
 				TargetAttributes = {
 					CB13019D1A522583008F4F64 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 32D7MJJTNG;
 					};
 					CB1301B51A522584008F4F64 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -195,9 +243,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1301DE1A52980D008F4F64 /* LaunchScreen.xib in Resources */,
+				CB1301DF1A52980D008F4F64 /* Main.storyboard in Resources */,
 				CB1301AC1A522583008F4F64 /* Main.storyboard in Resources */,
+				CB1301E31A52980D008F4F64 /* Images.xcassets in Resources */,
 				CB1301B11A522583008F4F64 /* LaunchScreen.xib in Resources */,
-				CB1301AE1A522583008F4F64 /* Images.xcassets in Resources */,
+				CB1301E41A52980D008F4F64 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +266,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB1301C91A523EEC008F4F64 /* Set.swift in Sources */,
+				CB1301CB1A523EED008F4F64 /* Card.swift in Sources */,
+				CB1301E21A52980D008F4F64 /* flash_cards.xcdatamodeld in Sources */,
 				CB1301A91A522583008F4F64 /* ViewController.swift in Sources */,
+				CB1301EB1A539147008F4F64 /* SetsViewController.swift in Sources */,
 				CB1301A71A522583008F4F64 /* flash_cards.xcdatamodeld in Sources */,
-				CB1301A41A522583008F4F64 /* AppDelegate.swift in Sources */,
+				CB1301DD1A52980D008F4F64 /* AppDelegate.swift in Sources */,
+				CB1301E61A52980D008F4F64 /* TableViewController.swift in Sources */,
+				CB1301E11A52980D008F4F64 /* CreateSetViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +311,22 @@
 				CB1301B01A522583008F4F64 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CB1301D01A52980D008F4F64 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1301D11A52980D008F4F64 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		CB1301D21A52980D008F4F64 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB1301D31A52980D008F4F64 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +413,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "flash-cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "flash-cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +484,7 @@
 				CB1301C21A522584008F4F64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB1301C31A522584008F4F64 /* Build configuration list for PBXNativeTarget "flash-cardsTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +493,7 @@
 				CB1301C51A522584008F4F64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -427,6 +504,16 @@
 				CB1301A61A522583008F4F64 /* flash_cards.xcdatamodel */,
 			);
 			currentVersion = CB1301A61A522583008F4F64 /* flash_cards.xcdatamodel */;
+			path = flash_cards.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		CB1301D61A52980D008F4F64 /* flash_cards.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB1301D71A52980D008F4F64 /* flash_cards.xcdatamodel */,
+			);
+			currentVersion = CB1301D71A52980D008F4F64 /* flash_cards.xcdatamodel */;
 			path = flash_cards.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
