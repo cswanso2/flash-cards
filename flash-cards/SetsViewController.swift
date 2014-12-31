@@ -7,19 +7,35 @@
 //
 
 import UIKit
+import CoreData
 
 class SetsViewController: UITableViewController {
 
-    var sets = [String]()
+    var sets = [Set]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        sets = [
-            "set1",
-            "set2",
-            "set3"
-        ]
+        let appDelegate =
+            UIApplication.sharedApplication().delegate as AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext!
+        
+        //2
+        let fetchRequest = NSFetchRequest(entityName:"Set")
+        
+        //3
+        var error: NSError?
+        
+        let fetchedResults =
+        managedContext.executeFetchRequest(fetchRequest,
+            error: &error) as [Set]?
+        
+        if let results = fetchedResults {
+            sets = results
+        } else {
+            println("Could not fetch \(error), \(error!.userInfo)")
+        }
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -41,9 +57,10 @@ class SetsViewController: UITableViewController {
         -> UITableViewCell {
             
             var cell = tableView.dequeueReusableCellWithIdentifier("setCell") as UITableViewCell
+            var currentSet = sets[indexPath.row] as Set
             
-            cell.textLabel?.text = sets[indexPath.row]
-            cell.detailTextLabel?.text = "0"
+            cell.textLabel?.text = currentSet.title
+            cell.detailTextLabel?.text = "\(currentSet.views)"
             
             return cell
     }
