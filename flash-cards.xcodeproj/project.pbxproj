@@ -23,6 +23,7 @@
 		CB1301E41A52980D008F4F64 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB1301D91A52980D008F4F64 /* Info.plist */; };
 		CB1301E61A52980D008F4F64 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301DB1A52980D008F4F64 /* TableViewController.swift */; };
 		CB1301EB1A539147008F4F64 /* SetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1301EA1A539147008F4F64 /* SetsViewController.swift */; };
+		CB4AE2051A53E682009ABECF /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4AE2041A53E682009ABECF /* AddCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		CB1301DB1A52980D008F4F64 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		CB1301DC1A52980D008F4F64 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB1301EA1A539147008F4F64 /* SetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetsViewController.swift; sourceTree = "<group>"; };
+		CB4AE2041A53E682009ABECF /* AddCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,13 +108,14 @@
 				CB1301A31A522583008F4F64 /* AppDelegate.swift */,
 				CB1301A81A522583008F4F64 /* ViewController.swift */,
 				CB1301C61A522A8D008F4F64 /* CreateSetViewController.swift */,
-				CB1301AA1A522583008F4F64 /* Main.storyboard */,
 				CB1301EA1A539147008F4F64 /* SetsViewController.swift */,
 				CB1301AD1A522583008F4F64 /* Images.xcassets */,
+				CB4AE2041A53E682009ABECF /* AddCardViewController.swift */,
 				CB1301CE1A52980D008F4F64 /* flash-cards */,
 				CB1301AF1A522583008F4F64 /* LaunchScreen.xib */,
 				CB1301A51A522583008F4F64 /* flash_cards.xcdatamodeld */,
 				CB1301CA1A523EED008F4F64 /* Card.swift */,
+				CB1301AA1A522583008F4F64 /* Main.storyboard */,
 				CB1301C81A523EEC008F4F64 /* Set.swift */,
 				CB1301A11A522583008F4F64 /* Supporting Files */,
 			);
@@ -270,6 +273,7 @@
 				CB1301CB1A523EED008F4F64 /* Card.swift in Sources */,
 				CB1301E21A52980D008F4F64 /* flash_cards.xcdatamodeld in Sources */,
 				CB1301A91A522583008F4F64 /* ViewController.swift in Sources */,
+				CB4AE2051A53E682009ABECF /* AddCardViewController.swift in Sources */,
 				CB1301EB1A539147008F4F64 /* SetsViewController.swift in Sources */,
 				CB1301A71A522583008F4F64 /* flash_cards.xcdatamodeld in Sources */,
 				CB1301DD1A52980D008F4F64 /* AppDelegate.swift in Sources */,

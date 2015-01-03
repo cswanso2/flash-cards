@@ -113,7 +113,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createButtonPressed:" destination="BHW-WN-0dV" eventType="touchUpInside" id="hW2-gh-qvX"/>
-                                    <segue destination="3ju-a8-wqa" kind="show" id="hmB-kK-q7t"/>
+                                    <segue destination="3ju-a8-wqa" kind="show" identifier="createSet" id="hmB-kK-q7t"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="850.5" y="-240.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Card View Controller-->
         <scene sceneID="w4F-FS-Ge2">
             <objects>
-                <viewController id="3ju-a8-wqa" sceneMemberID="viewController">
+                <viewController id="3ju-a8-wqa" customClass="AddCardViewController" customModule="flash_cards" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gIG-3O-9GW"/>
                         <viewControllerLayoutGuide type="bottom" id="LRu-Wp-jcR"/>
@@ -165,11 +165,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Back Card" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-iL-yCr">
-                                <rect key="frame" x="16" y="280" width="343" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Cards" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OB5-V0-h7P">
                                 <rect key="frame" x="129" y="20" width="117" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -181,17 +176,43 @@
                                 <state key="normal" title="Add More">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addMoreCards:" destination="3ju-a8-wqa" eventType="touchUpInside" id="8SS-gx-AkS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJP-c3-Nmu">
-                                <rect key="frame" x="88" y="334" width="41" height="30"/>
+                                <rect key="frame" x="104" y="334" width="41" height="30"/>
                                 <state key="normal" title="Finish">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="finishButtonPressed:" destination="3ju-a8-wqa" eventType="touchUpInside" id="zZQ-bD-knN"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Back Card" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zMt-iL-yCr">
+                                <rect key="frame" x="16" y="280" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeN-Bf-JGF">
+                                <rect key="frame" x="16" y="361" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="backCard1" destination="4hE-m6-Em9" id="3OH-sv-W6q"/>
+                        <outlet property="backCard2" destination="VvJ-21-Pbb" id="hdd-5t-0GY"/>
+                        <outlet property="backCard3" destination="zMt-iL-yCr" id="uLH-Kd-jxZ"/>
+                        <outlet property="frontCard1" destination="T5F-8J-73J" id="8dj-eG-7De"/>
+                        <outlet property="frontCard2" destination="0gx-0R-Jwf" id="BP5-wg-fbN"/>
+                        <outlet property="frontCard3" destination="38p-Vx-Tl6" id="Jfj-da-aVb"/>
+                        <outlet property="warningLabel" destination="aeN-Bf-JGF" id="cdv-9M-x0X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SU4-HW-5ME" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

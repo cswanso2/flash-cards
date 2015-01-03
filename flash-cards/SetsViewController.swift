@@ -15,18 +15,10 @@ class SetsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let appDelegate =
-            UIApplication.sharedApplication().delegate as AppDelegate
-        
+        let appDelegate = UIApplication.sharedApplication().delegate as AppDelegate
         let managedContext = appDelegate.managedObjectContext!
-        
-        //2
         let fetchRequest = NSFetchRequest(entityName:"Set")
-        
-        //3
         var error: NSError?
-        
         let fetchedResults =
         managedContext.executeFetchRequest(fetchRequest,
             error: &error) as [Set]?

@@ -17,23 +17,24 @@ class CreateSetViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    var setTitle: String?
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func createButtonPressed(sender: UIButton) {
-        println("create button pressed")
-        var appDel:AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
-        var context:NSManagedObjectContext = appDel.managedObjectContext!
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "createSet"{
+            let newView = segue.destinationViewController as AddCardViewController
+            newView.setTitle = setTitle
+        }
+    }
     
-        var newSet = NSEntityDescription.insertNewObjectForEntityForName("Set", inManagedObjectContext: context) as Set
-        newSet.title = nameField.text
-        newSet.selfCreated = true
-        
-        var error: NSError? = nil
-        context.save(&error)
-        println(nameField.text)
+    @IBAction func createButtonPressed(sender: UIButton) {
+        var title = nameField.text
+        Set.createSet(title, views: 0, selfCreated: 0, numberOfCards: 0)
+        setTitle = title
     }
 
     @IBOutlet weak var nameField: UITextField!

@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 class Card: NSManagedObject {
 
@@ -18,4 +19,19 @@ class Card: NSManagedObject {
     @NSManaged var wrong: NSNumber
     @NSManaged var belongsTo: Set
 
+    class func createCard(front: String, back: String, views: NSNumber, right: NSNumber, wrong: NSNumber, holdingSet: Set)
+    {
+        var appDel:AppDelegate = (UIApplication.sharedApplication().delegate as AppDelegate)
+        var context:NSManagedObjectContext = appDel.managedObjectContext!
+        
+        var newCard = NSEntityDescription.insertNewObjectForEntityForName("Card", inManagedObjectContext: context) as Card
+        newCard.front = front
+        newCard.back = back
+        newCard.views = views
+        newCard.right = right
+        newCard.wrong = wrong
+        holdingSet.hasCard = holdingSet.hasCard.setByAddingObject(newCard)
+        var error: NSError? = nil
+        context.save(&error)
+    }
 }
